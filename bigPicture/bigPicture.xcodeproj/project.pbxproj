@@ -14,6 +14,7 @@
 		F58A2DAF1CEC47CC0087C417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58A2DAD1CEC47CC0087C417 /* LaunchScreen.storyboard */; };
 		F58A2DBA1CEC47CC0087C417 /* bigPictureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F58A2DB91CEC47CC0087C417 /* bigPictureTests.m */; };
 		F58A2DC51CEC47CC0087C417 /* bigPictureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F58A2DC41CEC47CC0087C417 /* bigPictureUITests.m */; };
+		F58A2DD41CEC53820087C417 /* UINavigationBar+common.m in Sources */ = {isa = PBXBuildFile; fileRef = F58A2DD31CEC53820087C417 /* UINavigationBar+common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		F58A2DC01CEC47CC0087C417 /* bigPictureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bigPictureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58A2DC41CEC47CC0087C417 /* bigPictureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bigPictureUITests.m; sourceTree = "<group>"; };
 		F58A2DC61CEC47CC0087C417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F58A2DD21CEC53820087C417 /* UINavigationBar+common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+common.h"; sourceTree = "<group>"; };
+		F58A2DD31CEC53820087C417 /* UINavigationBar+common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+common.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				F58A2DA31CEC47CC0087C417 /* AppDelegate.m */,
 				F58A2DA51CEC47CC0087C417 /* ViewController.h */,
 				F58A2DA61CEC47CC0087C417 /* ViewController.m */,
+				F58A2DD21CEC53820087C417 /* UINavigationBar+common.h */,
+				F58A2DD31CEC53820087C417 /* UINavigationBar+common.m */,
 				F58A2DAB1CEC47CC0087C417 /* Assets.xcassets */,
 				F58A2DAD1CEC47CC0087C417 /* LaunchScreen.storyboard */,
 				F58A2DB01CEC47CC0087C417 /* Info.plist */,
@@ -268,6 +273,7 @@
 			files = (
 				F58A2DA71CEC47CC0087C417 /* ViewController.m in Sources */,
 				F58A2DA41CEC47CC0087C417 /* AppDelegate.m in Sources */,
+				F58A2DD41CEC53820087C417 /* UINavigationBar+common.m in Sources */,
 				F58A2DA11CEC47CC0087C417 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

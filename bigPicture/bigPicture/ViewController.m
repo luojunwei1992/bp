@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UINavigationBar+common.h"
 
 @interface ViewController ()
 
@@ -24,7 +25,19 @@
     
     //设置偏移量
     self.tableView.contentInset = UIEdgeInsetsMake(200, 0, 0, 0);
+    
+    //去掉nav下面的线
+    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+    
+    //设置nav
+    [self setUpNav];
 
+}
+
+- (void)setUpNav
+{
+    self.navigationItem.title = @"hello";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStyleDone target:self action:nil];
 }
 
 - (void)insertBigPicture
@@ -61,6 +74,10 @@
     
     NSLog(@"%lf----------offsetY",offSetY);
     
+    UIColor *color = [UIColor blueColor];
+    
+    CGFloat alpha = (offSetY) / 200;
+     //nav隐藏
     if (offSetY < -200) {
         
         CGRect f = _bigP.frame;
@@ -70,7 +87,33 @@
         f.size.height = - offSetY;
         
        _bigP.frame = f;
+        
+        
     }
+    
+    
+    if (offSetY > -30) {
+        
+       
+        [UIView animateWithDuration:1 animations:^{
+            
+             [self.navigationController.navigationBar alphaNavigationBarView:[color colorWithAlphaComponent:1]];
+        }];
+        
+       
+        
+    }else{
+        
+      
+        [UIView animateWithDuration:1 animations:^{
+            
+            [self.navigationController.navigationBar alphaNavigationBarView:[color colorWithAlphaComponent:0]];
+        }];
+        
+    }
+
+   
+    
     
 }
 
